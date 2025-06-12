@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chickbites Checkout</title>
+  <link rel="stylesheet" href="../CSS/checkout.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <img src="../images/Chickbites logos.png" alt="Logo" />
+      <span style="color:#fffbe2; font-weight: bold; font-size: 2rem;">Chickbites</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="login.html">Logout</a></li>
+    </ul>
+    <a href="checkout.html" class="cart-icon">
+      <img src="../images/4.png" alt="Cart" style="width: 30px; height: 30px;"/>
+    </a>
+  </header>
+
+  <main class="container order-summary">
+    <h2>Order Summary</h2>
+    <div id="cartItemsContainer"></div>
+
+    <div class="totals">
+      <div>Subtotal <span id="subtotal">₱0</span></div>
+      <div>Delivery Fee <span id="deliveryFee">₱60</span></div>
+      <div class="total">TOTAL <span id="total">₱0</span></div>
+    </div>
+
+    <div class="delivery-pickup">
+      <button class="active" id="deliveryBtn">Delivery</button>
+      <button id="pickupBtn">Pickup</button>
+    </div>
+  
+<hr style="border: 1px solid #e08229; margin: 20px 0;" />
+
+      <h3>Location</h3>
+    <div class="address-section" style="margin-top: 30px;">
+      <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+        <img src="../images/location.png" alt="Location" style="width: 28px; height: 28px;" />
+        <span id="savedAddress" style="color: #333;">Fetching saved address...</span>
+        <input type="checkbox" id="useNewAddress" style="margin-left: auto;" />
+      </div>
+
+      <p style="font-weight: bold; margin-top: 30px;">Add different location</p>
+      <div style="display: flex; align-items: center; gap: 10px; margin-top: 5px;">
+        <img src="../images/add.png" alt="Add" style="width: 28px; height: 28px;" />
+        <input
+          type="text"
+          id="newAddressInput"
+          placeholder="Address"
+          style="flex: 1; padding: 10px; border: 2px solid orange; border-radius: 10px; font-size: 1rem;"
+        />
+      </div>
+    </div>
+
+<hr style="border: 1px solid #e08229; margin: 20px 0;" />
+
+    <div class="payment">
+      <h3>Payment Details</h3>
+      <button class="active" id="codBtn">Cash on Delivery</button>
+      <button id="ewalletBtn">E-Wallet</button>
+    </div>
+
+    <hr style="border: 1px solid #e08229; margin: 20px 0;" />
+    
+         <h3>Voucher Discount</h3>
+    <div style="display: flex; align-items: center; gap: 10px; margin-top: 5px;">
+      <img src="../images/discount.png" alt="Voucher" style="width: 28px; height: 28px;" />
+      <input
+        type="text"
+        id="voucherInput"
+        placeholder="Enter voucher code"
+        style="flex: 1; padding: 10px; border: 2px solid orange; border-radius: 10px; font-size: 1rem;"
+      />
+    </div>
+    <div id="voucherMessage" style="margin-top: 5px; font-weight: bold;"></div>
+
+    <button class="place-order" id="placeOrderBtn">Place Order</button>
+    <button id="backToMenuBtn" class="place-order" style="background-color: #999;">← Back to Menu</button>
+  </main>
+
+  <footer class="footer">
+    © <span id="year"></span> Chickbites. All Rights Reserved | Photos are for reference only
+  </footer>
+
+  <!-- ✅ Make sure this is at the very end -->
+  <script src="../JS/checkout.js"></script>
+</body>
+</html>

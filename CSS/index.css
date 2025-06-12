@@ -1,0 +1,470 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+/* Hero section with background image */
+.hero {
+  background: url("../images/try.jpg") no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Push content to bottom */
+  position: relative;
+}
+/* Position container */
+.hero-content {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Semi-transparent button styling */
+.semi-transparent-button {
+  display: block;
+  box-sizing: border-box;
+  margin-top: 18px;
+  padding: 30px 42px;
+  width: auto;
+  background: transparent;
+  border-radius: 16px;
+  color: #fffbe2;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 4.2rem;
+  transition: all 0.3s ease-out;
+  backdrop-filter: blur(5px);
+  border: 8px solid rgba(255, 251, 226);
+  
+}
+
+/* Optional hover effect */
+.semi-transparent-button:hover {
+  background: #fffbe2d1;
+  color: #333;
+}
+
+/* Catchphrase text */
+.catchphrase {
+  margin-top: 15px;
+  color: #fbd287;
+  font-size: 1.6rem;
+  font-style: italic;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  
+  max-width: 400px;    
+  margin-left: auto;   
+  margin-right: auto; 
+  text-align: center;  
+  text-align: justify;
+}
+
+
+/* Navbar styling */
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+     background-color: #a80707;
+
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem; 
+}
+
+.navbar .logo img {
+  height: 50px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li a {
+  color: #fffde6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.scroll-section {
+  background: transparent;
+  padding: 0;
+
+   margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.scroll-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.scroll-container {
+  display: flex;
+  gap: 1rem;
+  animation: scroll-left 25s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.product-card {
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 350px;
+  height: 200px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.product-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.3s ease;
+}
+
+.product-card.active img {
+  filter: blur(4px);
+}
+
+/* Overlay content */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+.product-card.active .overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.overlay p {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.overlay button {
+  padding: 0.5rem 1rem;
+  background-color: #f55d09;
+  color:  #fffbe2;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.overlay button:hover {
+  background-color: #e0a800;
+}
+
+.overlay a {
+  text-decoration: none;
+}
+
+
+.team-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f45100; 
+  padding: 30px 0;
+}
+
+.team-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fffde6; 
+  margin: 0 20px;
+}
+
+.line {
+  flex: 1;
+  height: 2px;
+  background-color: #fffde6;
+  max-width: 400px;
+}
+
+.chickbites-section {
+  background-image: url("../images/bgO.png");
+  background-size: cover;
+  background-color: #a80707;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 50px 20px;
+  min-height: 50vh;
+}
+
+.catchphrase-box {
+  background-color: #f9fddc; /* light yellow */
+  border-radius: 25px;
+  padding: 30px 40px;
+  max-width: 700px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+  color: #000;
+  font-size: 1.1rem;
+  text-align: justify;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+.video-container {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: none;
+  outline: none;
+}
+
+.team-highlight {
+  
+  display: flex;
+  height: 1600px; /* Full screen height */
+  background: #fff8dc url("../images/bgL.png") repeat;
+}
+
+
+.cards {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+ margin-left: 175px;
+ margin-right: 175px;
+  overflow: hidden; 
+}
+
+/* Card styles */
+.card {
+  display: flex;
+  background-color: #b70000;
+  color:  #fff8dc;
+  border-radius: 15px;
+  padding: 20px;
+  align-items: center;
+  gap: 25px;
+}
+
+.card-info {
+  text-align: center;
+  flex: 1;
+}
+
+.profile-img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 4px solid white;
+}
+
+/* RIGHT: Full-height sticky sidebar */
+.highlight-description {
+  width: 260px;
+  background-color: #b70000;
+  color:  #fffbe2;
+  text-align: justify;
+  padding: 30px 20px;
+  height: 1500; 
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  box-shadow: -3px 0 8px rgba(0,0,0,0.1);
+  flex-shrink: 0;
+}
+
+.highlight-description h1 {
+  font-size: 34px;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  text-align: center;
+    color:  #fffbe2;
+}
+
+.highlight-description p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.footer {
+  background-color: #a80707;
+  color: #fffbe2;
+  font-weight: bold;
+  text-align: center;
+  padding: 16px 20px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* 🌐 General mobile responsiveness */
+@media (max-width: 768px) {
+  .hero {
+      height: 60vh; /* Make it shorter on smaller screens */
+     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url("../images/image.png") no-repeat center center/cover;
+
+  }
+  .hero-content {
+    top: 50px;
+    left: 20px;
+    padding-right: 20px;
+  }
+  .nav-links {
+    display: none;
+  }
+
+  .hero-content {
+   top: 100px;
+    left: 15px;
+  }
+
+  .semi-transparent-button {
+    font-size: 2rem;
+    margin-top: 20px;
+    padding: 14px 20px;
+    border: 4px solid rgba(255, 251, 226);
+  }
+
+  .scroll-container {
+    height: 150px;
+  }
+
+  .product-card {
+    min-width: 250px;
+    height: 150px;
+  }
+
+  .overlay p {
+    font-size: 1rem;
+  }
+
+  .overlay button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+  .team-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .chickbites-section {
+    padding: 30px 10px;
+  }
+
+  .catchphrase-box {
+    font-size: 1rem;
+    padding: 20px;
+    margin: 10px;
+  }
+
+  .team-highlight {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .cards {
+    padding: 20px;
+    margin: 0;
+  }
+
+  .card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+  }
+
+  .highlight-description {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: auto;
+    box-shadow: none;
+    padding: 20px;
+    margin-top: 30px;
+  }
+}
+
+/* 🧠 Optional: iPhone 14 Pro Max specific tweak */
+@media (max-width: 430px) {
+  .semi-transparent-button {
+    font-size: 1.8rem;
+    padding: 16px 24px;
+  }
+
+  .hero-content {
+    top: 30px;
+    left: 15px;
+  }
+
+  .catchphrase {
+    font-size: 1rem;
+  }
+
+  .highlight-description h1 {
+    font-size: 28px;
+  }
+}

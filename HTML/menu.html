@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chickbites Menu</title>
+  <link rel="stylesheet" href="../CSS/menu.css" />
+</head>
+<body>
+ <nav class="navbar">
+    <div class="logo">
+      <img src="../images/Chickbites logos.png" alt="Logo" />
+      Chickbites
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="index.html" class="home-link">Home</a></li>
+<li><a href="index.html#about">About</a></li>
+      <li><a href="login.html">Logout</a></li>
+    </ul>
+<a href="checkout.html" class="desktop-cart-link">
+  <img src="../images/4.png" alt="Cart" style="width: 30px; height: 30px;" />
+</a>
+
+
+<div class="mobile-buttons">
+  <!-- Home Button -->
+  <div class="home-toggle" onclick="window.location.href='index.html'">
+    <img src="../images/Daco_4812335.png" alt="Home" class="home-icon-img" />
+  </div>
+
+  <!-- Cart Button -->
+  <div class="cart-menu-toggle view-cart-btn">
+    <img src="../images/cart.png" alt="Cart" class="cart-icon-img" />
+  </div>
+</div>
+
+
+  </nav>
+
+  <main class="container">
+    <section class="content">
+      <div class="menu-wrapper">
+        <section class="categories">
+          <button data-category="all" class="active">All</button>
+          <button data-category="chicken">Chicken</button>
+          <button data-category="pasta">Pasta</button>
+          <button data-category="combo">Combo Meals</button>
+          <button data-category="drinks">Drinks</button>
+          <button data-category="addons">Add-Ons</button>
+        </section>
+
+        <div class="menu-items">
+          <!-- Menu cards inserted dynamically -->
+        </div>
+      </div>
+
+      <aside class="cart">
+         <div class="close-cart-btn">✕</div>
+        <h2><span class="cart-icon">🛒</span> Your Cart</h2>
+
+        <div class="cart-items">
+          <!-- Cart items inserted dynamically -->
+        </div>
+
+        <hr />
+
+        <div class="totals">
+          <p>Subtotal: <span id="subtotal">₱0</span></p>
+          <p>Delivery Fee: <span id="deliveryFee">₱0</span></p>
+          <p class="total"><strong>YOUR TOTAL</strong>: <span id="total">₱0</span></p>
+        </div>
+        <button id="checkoutBtn" disabled>Checkout (0)</button>
+
+   
+
+      </aside>
+    </section>
+  </main>
+
+  <script src="../JS/menu.js"></script>
+</body>
+</html>

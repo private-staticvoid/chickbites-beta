@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chickbites Register</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+    .gradient-custom {
+      background-color: #cc0909;
+      background-image: url("../images/bgO.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+    }
+
+    .navbar-custom {
+      background-color: #a80707;
+    }
+
+    .navbar-brand, .nav-link {
+      color: #fffbe2 !important;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .nav-link:hover {
+      color:  #e08229 !important;
+    }
+
+    .register-card {
+      width: 800px;
+ 
+      max-width: 100%;
+      border-radius: 2rem;
+      background-color: #fffbe2;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      padding: 30px 40px;
+      box-shadow: 0 0 50px rgba(0,0,0,0.3);
+      margin-top: 150px;
+      margin-bottom: 160px;
+    }
+@media (max-width: 600px) {
+  .register-card {
+    width: 95%;
+    padding: 20px 15px;
+    margin: auto;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .form-row > .form-floating {
+    flex: 1 1 100%;
+    min-width: 100%;
+  }
+
+  .btn-custom {
+    width: 100%;
+  }
+
+  .navbar {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  footer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+
+    h2.register-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: bold;
+      color: #2c2b2b;
+      margin-bottom: 30px;
+    }
+
+    h2.register-header img {
+      width: 35px;
+      height: 35px;
+      object-fit: contain;
+    }
+
+    .form-control {
+      border: 2px solid #e08229;
+      background-color: #fffbe2;
+      border-radius: 1.2rem;
+      padding-right: 35px;
+    }
+    .form-control:focus {
+      border-color: #cc0909;
+      background-color: white;
+      box-shadow: 0 0 5px #cc0909;
+      outline: none;
+    }
+
+    .form-floating {
+      position: relative;
+      margin-bottom: 1.5rem;
+    }
+
+    .form-floating img.input-icon {
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 20px;
+      height: 20px;
+      pointer-events: none;
+      opacity: 0.7;
+    }
+
+    .btn-custom {
+      background-color: #f55d09;
+      color: white;
+      font-weight: bold;
+      border: none;
+      font-size: 1.1rem;
+      padding: 12px;
+      width: 100%;
+      border-radius: 30px;
+    }
+
+    .btn-custom:hover {
+      background-color: #e08229;
+      color: #000;
+    }
+
+    .form-row {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .form-row > .form-floating {
+      flex: 1 1 45%;
+      min-width: 220px;
+    }
+
+    .form-row.full-width > .form-floating {
+      flex: 1 1 100%;
+    }
+
+    @media (max-width: 900px) {
+      .register-card {
+        width: 90%;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        padding: 20px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .register-card {
+        width: 95%;
+        padding: 15px;
+        margin-top: 80px;
+        margin-bottom: 80px;
+      }
+      .form-row {
+        flex-direction: column;
+      }
+      .form-row > .form-floating {
+        flex: 1 1 100%;
+        min-width: 100%;
+      }
+      .btn-custom {
+        width: 100%;
+      }
+    }
+
+    /* 📱 iPhone 14 Plus, mid phones */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .login-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .side-image {
+    width: 100%;
+    height: 200px;
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  .card-body {
+    width: 100%;
+    border-radius: 0 0 1rem 1rem;
+    padding: 2rem;
+  }
+}
+
+/* 📲 iPad Pro portrait & landscape */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .login-card {
+    flex-direction: row;
+  }
+
+  .side-image {
+    display: block;
+    max-width: 45%;
+  }
+
+  .card-body {
+    padding: 3rem 2.5rem;
+  }
+}
+
+/* 💻 Desktop and large screens */
+@media (min-width: 1025px) {
+  .side-image {
+    display: block;
+  }
+
+  .card-body {
+    padding: 3rem;
+  }
+}
+  </style>
+</head>
+<body class="gradient-custom">
+
+  <nav class="navbar navbar-expand-lg navbar-custom px-4 fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="login.html">
+        <img src="../images/Chickbites logos.png" height="50" alt="Logo" />
+        <span class="ms-2" style="color:#fffbe2; font-weight: bold; font-size: 1.8rem;">Chickbites</span>
+      </a>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+<section class="d-flex justify-content-center align-items-start py-5 px-2">
+
+    <div class="register-card">
+      <h2 class="register-header">
+        <img src="../images/3.png" alt="Register Icon" />
+        Register
+      </h2>
+      <form id="registerForm">
+        <div class="form-row">
+          <div class="form-floating">
+            <input type="text" class="form-control" id="FirstName" name="FirstName" placeholder="First Name" required />
+            <label for="FirstName">First Name</label>
+          </div>
+          <div class="form-floating">
+            <input type="text" class="form-control" id="LastName" name="LastName" placeholder="Last Name" required />
+            <label for="LastName">Last Name</label>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-floating">
+            <input type="text" class="form-control" id="Username" name="Username" placeholder="Username" required />
+            <label for="Username">Username</label>
+          </div>
+          <div class="form-floating">
+            <input type="email" class="form-control" id="EmailAddress" name="EmailAddress" placeholder="Email Address" required />
+            <label for="EmailAddress">Email Address</label>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-floating">
+            <input type="password" class="form-control" id="Password" name="Password" placeholder="Password" required />
+            <label for="Password">Password</label>
+          </div>
+          <div class="form-floating">
+            <input type="password" class="form-control" id="ConfirmPassword" name="ConfirmPassword" placeholder="Confirm Password" required />
+            <label for="ConfirmPassword">Confirm Password</label>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-floating">
+            <input type="tel" class="form-control" id="PhoneNumber" name="PhoneNumber" placeholder="Phone Number" required />
+            <label for="PhoneNumber">Phone Number</label>
+          </div>
+          <div class="form-floating">
+            <input type="text" class="form-control" id="HomeAddress" name="HomeAddress" placeholder="Home Address" required />
+            <label for="HomeAddress">Home Address</label>
+          </div>
+        </div>
+        <div class="d-flex flex-column align-items-center mt-3 text-center">
+          <button class="btn btn-custom mb-2" style="width: 40%;" type="submit">Create Account</button>
+          <hr class="my-3 w-50" style="border-top: 3px solid #e08229; opacity: 1;" />
+          <p class="mb-0" style="color: #2c2b2b;">Already have an account?
+            <a href="login.html" class="fw-bold" style="color: #2c2b2b;">Login</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </section>
+<script>
+  document.getElementById("registerForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const firstName = document.getElementById("FirstName").value.trim();
+  const lastName = document.getElementById("LastName").value.trim();
+  const username = document.getElementById("Username").value.trim();
+  const email = document.getElementById("EmailAddress").value.trim().toLowerCase(); // Normalize email
+  const password = document.getElementById("Password").value;
+  const confirmPassword = document.getElementById("ConfirmPassword").value;
+  const phone = document.getElementById("PhoneNumber").value.trim();
+  const address = document.getElementById("HomeAddress").value.trim();
+
+  if (password !== confirmPassword) {
+    alert("❌ Passwords do not match!");
+    return;
+  }
+
+  // Get existing users from localStorage
+  const users = JSON.parse(localStorage.getItem("registeredUsers")) || [];
+
+  // Check if email is already used (case-insensitive match)
+  const existingUser = users.find(u => u.EmailAddress.toLowerCase() === email);
+  if (existingUser) {
+    alert("⚠️ An account with this email already exists!");
+    return;
+  }
+
+  // Add new user
+  const newUser = {
+    FirstName: firstName,
+    LastName: lastName,
+    Username: username,
+    EmailAddress: email,
+    Password: password,
+    PhoneNumber: phone,
+    HomeAddress: address
+  };
+
+  users.push(newUser);
+  localStorage.setItem("registeredUsers", JSON.stringify(users));
+
+  // Save address for future use (e.g., on checkout page)
+  localStorage.setItem("userAddress", newUser.HomeAddress);
+
+  alert("✅ Account created successfully!\n\nWelcome, " + firstName + "!");
+  this.reset();
+  window.location.href = "login.html"; // Redirect to login
+});
+
+  </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <footer class="text-center py-3" style="background-color: #a80707; color: #fffbe2; font-weight: bold;">
+      © 2025 Chickbites. All Rights Reserved | Photos are for reference only
+    </footer>
+  </body>
+  </html>

@@ -1,0 +1,309 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url("../images/bgO.png"); /* Replace with your image path */
+  background-size: cover;
+  background-color: #df1918;
+  background-repeat: no-repeat;
+  background-position: center;
+padding-top: 50px;
+    overflow-x: hidden;
+  min-height: 50vh;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+     background-color: #a80707;
+
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem; 
+}
+
+.navbar .logo img {
+  height: 50px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li a {
+  color: #fffde6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.container {
+  background-color: #fff6d6;
+  width: 100%;
+  max-width: 500px;
+  
+  margin: 5rem auto 2rem; 
+
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #c70000;
+  color:  #fffde6;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+.order-summary h2 {
+  margin-bottom: 1rem;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.item p {
+  font-size: 0.8rem;
+  color: #555;
+  margin: 0.3rem 0;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.totals div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.total {
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.delivery-pickup {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.delivery-pickup button {
+  width: 48%;
+  padding: 0.5rem;
+  border: 2px solid #ff6600;
+  background-color: transparent;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.delivery-pickup .active {
+  background-color: #ff6600;
+  color: #fffde6;
+}
+
+.location {
+  margin: 1rem 0;
+}
+
+.location .icon {
+  margin-right: 0.5rem;
+}
+
+.location input[type="text"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.payment {
+  margin: 1rem 0;
+}
+
+.payment button {
+  width: 48%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: 2px solid #ff6600;
+  border-radius: 8px;
+  background-color: transparent;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.payment .active {
+  background-color: #ff6600;
+  color:  #fffde6;
+}
+
+.promo input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin: 1rem 0;
+   margin-bottom: 10px;
+}
+
+.place-order {
+  background-color: #ff6600;
+  color:  #fffde6;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0.8rem;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  color: #333;
+}
+
+
+.voucher {
+  margin: 1rem 0;
+}
+
+.voucher-input {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0.5rem;
+  background-color: #fff;
+   margin-bottom: 10px;
+}
+
+.voucher-input input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background: transparent;
+}
+
+.voucher-input img {
+  width: 24px;
+  height: 24px;
+}
+.voucher-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.footer {
+  background-color: #a80707;
+  color: #fffbe2;
+  font-weight: bold;
+  text-align: center;
+  padding: 16px 20px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.combo-options {
+  margin-bottom: 10px;
+}
+
+.combo-options label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.mobile-buttons {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    padding-top: 40px;
+  }
+
+  .navbar {
+    padding: 0.75rem 1rem;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .navbar .logo img {
+    height: 40px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .container {
+    margin: 3rem 1rem;
+    padding: 1rem;
+    width: 90%;
+  }
+
+  header {
+    flex-direction: row;
+    text-align: center;
+    gap: 0.25rem;
+  }
+
+  .delivery-pickup,
+  .payment {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .delivery-pickup button,
+  .payment button {
+    width: 100%;
+  }
+
+  .place-order {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+
+  .voucher-input input {
+    font-size: 0.9rem;
+  }
+
+  .voucher-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .footer {
+    padding: 12px 10px;
+    font-size: 12px;
+  }
+}
