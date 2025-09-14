@@ -50,7 +50,7 @@ ___**This project is developed as a university requirement for the course CTAPDE
 ![Order Screenshot](chickbites-beta/sscbbeta/order.png)
 
 ### CHECKOUT
-![Checkout Screenshot](chickbites-beta/sscbbeta/checkout.png)
+![Checkout Screenshot](sscbbeta/checkout.png)
 
 ### ABOUT
 ![About Screenshot](chickbites-beta/sscbbeta/about.png)
