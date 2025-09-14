@@ -5,6 +5,9 @@ This version is a **web-based implementation** that allows customers to browse t
 
 ___**This project is developed as a university requirement for the course CTAPDEVL: Web Systems and Technologies.**___
 
+## 🌍 Live Demo
+🔗 [ChickBites Beta on Netlify](https://chickbitess.netlify.app/)
+
 ## 🚀 Features
 - **Account Management** – Simple user registration and login simulation  
 - **Menu & Cart System** – Browse chicken meals and combos, add items to cart, and review selections  
@@ -34,11 +37,24 @@ ___**This project is developed as a university requirement for the course CTAPDE
 ---
 ## 📸 Sample Screenshots
 
-### HOME PAGE
-![Menu Screenshot](ROMS/screenshots/SSchick1.png)
+### HOME
+![Home Screenshot](chickbites-beta/sscbbeta/home.png)
 
-### ORDER PAGE
-![Checkout Screenshot](ROMS/screenshots/SSchick2.png)
+### LOGIN
+![Login Screenshot](chickbites-beta/sscbbeta/login.png)
+
+### REGISTER
+![Register Screenshot](chickbites-beta/sscbbeta/register.png)
+
+### ORDER
+![Order Screenshot](chickbites-beta/sscbbeta/order.png)
+
+### CHECKOUT
+![Checkout Screenshot](chickbites-beta/sscbbeta/checkout.png)
+
+### ABOUT
+![About Screenshot](chickbites-beta/sscbbeta/about.png)
+
 
 ## 🧑‍💻 Team Members
 - **[Aisha](https://github.com/AishBon)** - Designer  
