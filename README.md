@@ -38,22 +38,22 @@ ___**This project is developed as a university requirement for the course CTAPDE
 ## 📸 Sample Screenshots
 
 ### HOME
-![Home Screenshot](chickbites-beta/sscbbeta/home.png)
+![Home Screenshot](sscbbeta/home.png)
 
 ### LOGIN
-![Login Screenshot](chickbites-beta/sscbbeta/login.png)
+![Login Screenshot](sscbbeta/login.png)
 
 ### REGISTER
-![Register Screenshot](chickbites-beta/sscbbeta/register.png)
+![Register Screenshot](sscbbeta/register.png)
 
 ### ORDER
-![Order Screenshot](chickbites-beta/sscbbeta/order.png)
+![Order Screenshot](sscbbeta/order.png)
 
 ### CHECKOUT
 ![Checkout Screenshot](sscbbeta/checkout.png)
 
 ### ABOUT
-![About Screenshot](chickbites-beta/sscbbeta/about.png)
+![About Screenshot](sscbbeta/about.png)
 
 
 ## 🧑‍💻 Team Members
