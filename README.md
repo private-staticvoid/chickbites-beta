@@ -12,8 +12,6 @@ ___**This project is developed as a university requirement for the course CTAPDE
 - **Order Tracking** – Orders are stored in **Local Storage** for persistence  
 - **Combo Meal Support** – Combos linked with multiple menu items for flexible ordering  
 - **Discount System** – Apply discounts such as:  
-  - Student Discount  
-  - Senior Citizen Discount  
   - Promo Codes for special offers  
 
 ## 🛠️ Technologies Used
