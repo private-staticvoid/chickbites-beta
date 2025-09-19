@@ -1,6 +1,6 @@
 # 🍗📦 ChickBites Beta - ROMS: Restaurant Ordering Management System (Chicken Restaurant System)
 
-ChickBites Beta is the **second version** of the restaurant ordering management system designed for ChickBites, a chicken restaurant.  
+ChickBites Beta is a ROmS and the **second version** of the restaurant ordering management system designed for ChickBites, a chicken restaurant.  
 This version is a **web-based implementation** that allows customers to browse the menu, add meals to a cart, and proceed to checkout. Orders are stored locally in the browser using **Local Storage**.  
 
 ___**This project is developed as a university requirement for the course CTAPDEVL: Web Systems and Technologies.**___
